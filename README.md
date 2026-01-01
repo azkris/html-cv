@@ -1,17 +1,19 @@
 # HTML CV Template
 
-A print-first, single-source-of-truth CV generator that produces multiple A4-accurate HTML and PDF versions (color, black & white, ATS-friendly) from structured data.
+A print-first, single-source-of-truth CV generator that produces multiple A4-accurate HTML and PDF versions (color, black & white, single column ATS-friendly) from structured data.
+
+View different versions here:
+- Color: https://azkris.github.io/html-cv/  
+- BW: https://azkris.github.io/html-cv/index-bw.html  
+- ATS: https://azkris.github.io/html-cv/index-bw-ats.html  
 
 Designed for developers who want full control over layout, typography, and export quality.
 
 ## Usage
 
-1. Clone the repository
-   ```bash
-   git clone <repo-url>
-   cd html-cv-template
-   ```
-2. Install dependencies
+1. Clone or download this repository
+  
+2. Install dependencies with __NodeJS__ (`v24.11.1` or higher) and __NPM__ (`11.6.2` or higher)
 
    ```bash
    npm install  
