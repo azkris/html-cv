@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= cv.personal.name %> – CV (ATS)</title>
+    <link rel="stylesheet" href="styles/ats.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1><%= cv.personal.name %></h1>
+        <p><%= cv.personal.title %></p>
+        <div class="contact">
+          <span><%= cv.personal.contact.email %></span> |
+          <span><%= cv.personal.contact.github %></span> |
+          <span><%= cv.personal.contact.linkedin %></span>
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <h2>Profile</h2>
+          <p><%= cv.profile %></p>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <% cv.education.forEach(function(ed){ %>
+          <h3><%= ed.degree %></h3>
+          <span><%= ed.university %> · <%= ed.dates %></span>
+          <p><%= ed.description %></p>
+          <% }) %>
+        </section>
+
+        <section>
+          <h2>Experience</h2>
+          <% cv.experience.forEach(function(exp){ %>
+          <h3><%= exp.title %></h3>
+          <span><%= exp.company %> · <%= exp.dates %></span>
+          <ul>
+            <% exp.tasks.forEach(function(task){ %>
+            <li><%= task %></li>
+            <% }) %>
+          </ul>
+          <% }) %>
+        </section>
+
+        <section>
+          <h2>Skills</h2>
+          <p>
+            <strong>Languages:</strong> <%= cv.skills.languages.join(", ") %><br />
+            <strong>Web:</strong> <%= cv.skills.web.join(", ") %><br />
+            <strong>Tools:</strong> <%= cv.skills.tools.join(", ") %>
+          </p>
+        </section>
+
+        <section>
+          <h2>Projects</h2>
+          <ul>
+            <% cv.projects.forEach(function(p){ %>
+            <li><%= p %></li>
+            <% }) %>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Interests</h2>
+          <p><%= cv.interests.join(", ") %></p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

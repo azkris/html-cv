@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= cv.personal.name %> – CV</title>
+    <link rel="stylesheet" href="styles/color.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div>
+          <h1><%= cv.personal.name %></h1>
+          <p class="subtitle"><%= cv.personal.title %></p>
+        </div>
+        <div class="contact">
+          <span><%= cv.personal.contact.email %></span>
+          <span><%= cv.personal.contact.github %></span>
+          <span><%= cv.personal.contact.linkedin %></span>
+        </div>
+      </header>
+
+      <main class="layout">
+        <!-- PROFILE -->
+        <div class="row">
+          <aside class="sidebar">Profile</aside>
+          <section class="content">
+            <div class="entry">
+              <p class="lead"><%= cv.profile %></p>
+            </div>
+          </section>
+        </div>
+        <hr class="row-separator" />
+
+        <!-- EDUCATION -->
+        <div class="row">
+          <aside class="sidebar"><%= "Education" %></aside>
+          <section class="content">
+            <div class="entry">
+              <% cv.education.forEach(function(ed, i){ %>
+              <h3><%= ed.degree %></h3>
+              <span class="meta"><%= ed.university %> · <%= ed.dates %></span>
+              <p><%= ed.description %></p>
+              <% }) %>
+            </div>
+          </section>
+        </div>
+        <hr class="row-separator" />
+
+        <!-- EXPERIENCE -->
+        <div class="row">
+          <aside class="sidebar"><%= "Experience" %></aside>
+          <section class="content">
+            <div class="entry">
+              <% cv.experience.forEach(function(exp, i){ %>
+              <h3><%= exp.title %></h3>
+              <span class="meta"><%= exp.company %> · <%= exp.dates %></span>
+              <ul>
+                <% exp.tasks.forEach(function(task){ %>
+                <li><%= task %></li>
+                <% }) %>
+              </ul>
+              <% }) %>
+            </div>
+          </section>
+        </div>
+        <hr class="row-separator" />
+
+        <!-- SKILLS -->
+        <div class="row">
+          <aside class="sidebar">Skills</aside>
+          <section class="content">
+            <div class="entry">
+              <p>
+                <strong>Languages:</strong> <%= cv.skills.languages.join(", ")
+                %><br />
+                <strong>Web:</strong> <%= cv.skills.web.join(", ") %><br />
+                <strong>Tools:</strong> <%= cv.skills.tools.join(", ") %>
+              </p>
+            </div>
+          </section>
+        </div>
+        <hr class="row-separator" />
+
+        <!-- PROJECTS -->
+        <div class="row">
+          <aside class="sidebar">Projects</aside>
+          <section class="content">
+            <div class="entry">
+              <ul>
+                <% cv.projects.forEach(function(p){ %>
+                <li><%= p %></li>
+                <% }) %>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <hr class="row-separator" />
+
+        <!-- INTERESTS -->
+        <div class="row stretch">
+          <aside class="sidebar">Interests</aside>
+          <section class="content">
+            <div class="entry">
+              <p><%= cv.interests.join(", ") %></p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

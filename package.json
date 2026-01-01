@@ -1,0 +1,25 @@
+{
+  "name": "html-cv",
+  "version": "1.0.0",
+  "description": "HTML + CSS based CV template.",
+  "main": "render.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azkris/html-cv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azkris/html-cv/issues"
+  },
+  "homepage": "https://github.com/azkris/html-cv#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "playwright": "^1.57.0",
+    "puppeteer": "^24.34.0"
+  }
+}
