@@ -35,18 +35,19 @@
     }
   ],
   "skills": {
-    "languages": ["Python", "JavaScript", "Java"],
+    "programming languages": ["Python", "JavaScript", "Java"],
     "web": ["HTML", "CSS", "React"],
-    "tools": ["Git", "Docker"]
+    "tools": ["Git", "Docker"],
+    "other": ["Teamwork", "Communication"],
+    "languages": ["English (native)"]
   },
   "projects": [
     "Full-stack academic web application",
     "Personal CV & portfolio website"
   ],
-  "interests": [
-    "Open-source software",
-    "UI/UX design",
-    "tech writing",
-    "hiking"
-  ]
+  "interests": {
+    "Open-source software": "linux distibutions and FOSS alternatives to common software",
+    "tech writing": "Blogs and tutorials",
+    "Sports": "Hiking"
+  }
 }

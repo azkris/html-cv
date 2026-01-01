@@ -75,7 +75,7 @@ body {
 }
 
 .stretch {
-  flex: 1 1 100%; /* This box stretches to take up the remaining space */
+	flex: 1 1 100%; /* This box stretches to take up the remaining space */
 }
 
 /* SIDEBAR */
@@ -83,11 +83,6 @@ body {
 	background: var(--main-darker);
 	color: var(--text-light);
 	padding: 1em 1em;
-}
-
-/* CONTENT */
-.content {
-	position: relative;
 }
 
 /* ENTRIES */

@@ -70,12 +70,11 @@
           <aside class="sidebar">Skills</aside>
           <section class="content">
             <div class="entry">
-              <p>
-                <strong>Languages:</strong> <%= cv.skills.languages.join(", ")
-                %><br />
-                <strong>Web:</strong> <%= cv.skills.web.join(", ") %><br />
-                <strong>Tools:</strong> <%= cv.skills.tools.join(", ") %>
-              </p>
+              <ul>
+                <% for (const [key, value] of Object.entries(cv.skills)) {%>
+                <li><b><%= key %></b>: <%=value.join(", ")%></li>
+                <% } %>
+              </ul>
             </div>
           </section>
         </div>
@@ -101,7 +100,11 @@
           <aside class="sidebar">Interests</aside>
           <section class="content">
             <div class="entry">
-              <p><%= cv.interests.join(", ") %></p>
+              <ul>
+                <% for (const [key, value] of Object.entries(cv.interests)) {%>
+                <li><b><%= key %></b>: <%=value%></li>
+                <% } %>
+              </ul>
             </div>
           </section>
         </div>
