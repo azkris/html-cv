@@ -86,9 +86,9 @@
           <section class="content">
             <div class="entry">
               <ul>
-                <% cv.projects.forEach(function(p){ %>
-                <li><%= p %></li>
-                <% }) %>
+                <% for (const [key, value] of Object.entries(cv.projects)) {%>
+                <li><b><%= key %></b>: <%=value%></li>
+                <% } %>
               </ul>
             </div>
           </section>

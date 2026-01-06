@@ -1,53 +1,53 @@
 {
-  "personal": {
-    "name": "Your Name",
-    "title": "Software Engineer / Web Developer",
-    "contact": {
-      "email": "email@example.com",
-      "github": "github.com/username",
-      "linkedin": "linkedin.com/in/username"
-    }
-  },
-  "profile": "Computer Science graduate with strong foundations in software engineering and web development. Focused on building clean, maintainable systems.",
-  "education": [
-    {
-      "degree": "M.Sc. Computer Science",
-      "university": "University Name",
-      "dates": "2021–2023",
-      "description": "Software engineering, algorithms, distributed systems."
-    },
-    {
-      "degree": "B.Sc. Computer Science",
-      "university": "University Name",
-      "dates": "2018–2021",
-      "description": "Data structures, databases, web development."
-    }
-  ],
-  "experience": [
-    {
-      "title": "Software Engineering Intern",
-      "company": "Company Name",
-      "dates": "Duration",
-      "tasks": [
-        "Developed frontend features using modern web standards",
-        "Collaborated in agile, code-review–driven teams"
-      ]
-    }
-  ],
-  "skills": {
-    "programming languages": ["Python", "JavaScript", "Java"],
-    "web": ["HTML", "CSS", "React"],
-    "tools": ["Git", "Docker"],
-    "other": ["Teamwork", "Communication"],
-    "languages": ["English (native)"]
-  },
-  "projects": [
-    "Full-stack academic web application",
-    "Personal CV & portfolio website"
-  ],
-  "interests": {
-    "Open-source software": "linux distibutions and FOSS alternatives to common software",
-    "tech writing": "Blogs and tutorials",
-    "Sports": "Hiking"
-  }
+	"personal": {
+		"name": "Your Name",
+		"title": "Software Engineer / Web Developer",
+		"contact": {
+			"email": "email@example.com",
+			"github": "github.com/username",
+			"linkedin": "linkedin.com/in/username"
+		}
+	},
+	"profile": "Computer Science graduate with strong foundations in software engineering and web development. Focused on building clean, maintainable systems.",
+	"education": [
+		{
+			"degree": "M.Sc. Computer Science",
+			"university": "University Name",
+			"dates": "2021–2023",
+			"description": "Software engineering, algorithms, distributed systems."
+		},
+		{
+			"degree": "B.Sc. Computer Science",
+			"university": "University Name",
+			"dates": "2018–2021",
+			"description": "Data structures, databases, web development."
+		}
+	],
+	"experience": [
+		{
+			"title": "Software Engineering Intern",
+			"company": "Company Name",
+			"dates": "Duration",
+			"tasks": [
+				"Developed frontend features using modern web standards",
+				"Collaborated in agile, code-review–driven teams"
+			]
+		}
+	],
+	"skills": {
+		"programming languages": ["Python", "JavaScript", "Java"],
+		"web": ["HTML", "CSS", "React"],
+		"tools": ["Git", "Docker"],
+		"other": ["Teamwork", "Communication"],
+		"languages": ["English (native)"]
+	},
+	"projects": {
+		"Academic Web App": "Full-stack academic web application",
+		"CV Website": "Personal CV & portfolio website"
+	},
+	"interests": {
+		"Open-source software": "linux distibutions and FOSS alternatives to common software",
+		"tech writing": "Blogs and tutorials",
+		"Sports": "Hiking"
+	}
 }
